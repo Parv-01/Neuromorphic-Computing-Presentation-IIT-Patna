@@ -83,7 +83,7 @@ export function Slide15Closing({ totalSlides }: { totalSlides: number }) {
             className="flex flex-col items-center gap-1"
           >
             <span className="text-1.2rem] text-[#E8E4D9]/40" style={{ fontFamily: "'IBM Plex Mono', monospace" }}>
-              Thank you
+              Thank you and open for feedbacks and discussions!
             </span>
             <div className="flex gap-3 mt-2">
               {["#3A6EA5", "#6BA292", "#5B4B8A"].map((color, i) => (
