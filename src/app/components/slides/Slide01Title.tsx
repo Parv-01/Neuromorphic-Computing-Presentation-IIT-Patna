@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { SlideWrapper } from "../SlideWrapper";
-import labLogo from "../../assets/lab-logo.png";
+import labLogo from "../../../assets/lab-logo.png";
 
 const PAPER_URL = "https://www.nature.com/articles/s43588-021-00184-y";
 
