@@ -1,4 +1,4 @@
-# Beyond Von Neumann: Neuromorphic Computing and the Future of Intelligent Systems
+# Beyond Von Neumann: Neuromorphic Computing and the Future of Intelligent Systems\n\nCreated by PARV AGARWAL
 
 An interactive research presentation web app exploring neuromorphic computing concepts, based on the paper by Schuman et al. published in [Nature Computational Science (2022)](https://www.nature.com/articles/s43588-021-00184-y).
 
@@ -72,30 +72,17 @@ This is a 15-slide interactive presentation built with React, TypeScript, Tailwi
 
 ### Step 1: Download the Project
 
-Download/export the project from Figma Make (use the "Download Code" button). Unzip the archive to a folder on your computer.
+Clone or download this repository to your local machine.
 
-### Step 2: Handle the Lab Logo Asset
+### Step 2: Handle the Lab Logo Asset (Local)
 
-The project imports a lab logo using Figma Make's virtual asset scheme:
+The project imports a lab logo from a local asset:
 
 ```ts
-import labLogo from "figma:asset/afda18d40ad75e79432af79973215067a9194fc6.png";
+import labLogo from "../../assets/lab-logo.png";
 ```
 
-This `figma:asset/...` import only works inside Figma Make. To run locally, you need to:
-
-1. **Save the logo image** to your project, e.g., as `/src/assets/lab-logo.png`
-2. **Update the import** in `/src/app/components/slides/Slide01Title.tsx`:
-
-   ```ts
-   // Before (Figma Make only):
-   import labLogo from "figma:asset/afda18d40ad75e79432af79973215067a9194fc6.png";
-
-   // After (local):
-   import labLogo from "../../assets/lab-logo.png";
-   ```
-
-> **Tip:** You can right-click the logo in the Figma Make preview and "Save Image As..." to get the PNG file, or export it from your Figma design.
+This project is configured to run locally without any external asset pipeline.
 
 ### Step 3: Install Dependencies
 
@@ -309,9 +296,9 @@ pnpm deploy
 ## Quick-Start Checklist
 
 ```
-[ ] Download project from Figma Make
+[ ] Clone or download this repository
 [ ] Save lab logo PNG to /src/assets/lab-logo.png
-[ ] Update the figma:asset import in Slide01Title.tsx
+[ ] Verify the lab logo path in Slide01Title.tsx
 [ ] Run: pnpm install
 [ ] Run: pnpm dev (verify it works locally)
 [ ] Create GitHub repo and push code
@@ -340,8 +327,6 @@ pnpm deploy
 │   │   └── components/
 │   │       ├── NeuralBackground.tsx   # Canvas-based neural network animation
 │   │       ├── SlideWrapper.tsx       # Shared slide layout with footer
-│   │       ├── figma/
-│   │       │   └── ImageWithFallback.tsx
 │   │       ├── slides/
 │   │       │   ├── Slide01Title.tsx   # Title slide
 │   │       │   ├── Slide02Crisis.tsx  # Through...
@@ -366,4 +351,4 @@ This project is an academic research presentation. The content is based on:
 
 ---
 
-Built with Figma Make, React, Vite, and Tailwind CSS.
+Built by PARV AGARWAL with React, Vite, and Tailwind CSS.
