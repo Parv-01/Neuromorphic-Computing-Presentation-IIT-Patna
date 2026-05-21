@@ -102,15 +102,15 @@ export function Slide01Title({ totalSlides }: { totalSlides: number }) {
           <div className="flex flex-col gap-2 text-[#E8E4D9] mb-8" style={{ fontSize: "0.95rem" }}>
             <div className="font-semibold text-[1.1rem]">Parv Agarwal</div>
             <div className="text-[#E8E4D9]/75">JRA (Tech)</div>
-            {/* 
-            <div className="text-[#E8E4D9]/75 mt-1">
+            
+            {/* <div className="text-[#E8E4D9]/75 mt-1">
               Supervised under: <span className="font-medium text-[#E8E4D9]/90">Dr. Asif Ekbal Sir</span>
-            </div>
+            </div> */}
             <div className="text-[#C9A84C] font-medium">IIT Patna</div>
           </div> 
-          <div className="flex flex-col gap-1 text-[#E8E4D9]/60" style={{ fontSize: "0.90rem", fontFamily: "'IBM Plex Mono', monospace" }}>
+          {/*<div className="flex flex-col gap-1 text-[#E8E4D9]/60" style={{ fontSize: "0.90rem", fontFamily: "'IBM Plex Mono', monospace" }}>
             <span>27-February-2026</span>
-          </div> */}
+          </div>*/}
         </motion.div>
 
         <motion.div
